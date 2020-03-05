@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/*Variables*/
+:root {
+    --box-shadow:1px 1px 5px rgb(38,38,38,0.10);
+    --main-color: #3D5AF1;
+    --low-blue: #22D1EE;
+    --box-grey: #F7F7F7;
+    --font-color: #252525;
+    font-size:16px;
+    scroll-behavior: smooth;
+    color:var(--font-color);    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Scrollbar style starts*/
+/* Scrollbar style starts*/
+body::-webkit-scrollbar {
+    width:0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background:var(--box-grey);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--low-blue);
+}
+/* Scrollbar style ends*/
+/* Scrollbar style ends*/
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    flex-direction: column;
+    max-width: 100vw;
+    height:100vh;
+    margin:0 auto;
+    overflow-x: hidden;
+}
+/*header starts*/
+/*header starts*/
+.header {
+    z-index:100; 
+    padding:10px;
+    width:100vw;
+    height:95px;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+/*Pardal Logo*/
+.logo {
+    margin:0.4rem 1rem;
+    margin-left:7.5vw;
+    align-items: flex-start;
+}
+
+/* Pagina Inicial | Serviços | Contatos */
+.nav-items {
+    align-items: center;
+}
+
+/* all items' class*/
+.item {
+    font-size: 14px;
+    padding:2.5rem;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.item:hover {
+    text-decoration: none;
+}
+
+/*contato-box/border*/
+.contato-box {
+    display:inline-block;
+    padding: .7rem 2rem;
+    border-radius: 5px;
+    border:2px solid var(--main-color);
+    transform: scale(1);
+    transition: all 0.2s;
+
+}
+
+.contato-box:hover {
+    transition: all 0.2s;
+    border: 2px solid var(--low-blue);
+
+}
+
+.contato-box:active{
+    transform: scale(0.99);
+    transition: all 0.2s;
+}
+
+/* Social Media*/
+.nav-social {
+    display:inline-block;
+    margin:0.4rem 1rem;
+    margin-right:7.5vw;
+    align-items:flex-end;
+}
+
+.social {
+    padding:.5rem;
+}
+
+
+/* FOOTER STARTS */
+
+/*ajustar pq esta surgindo o X scroll*/
+footer {
+    clear: both;
+    height: 60px;
+    background-color: var(--box-grey);
+    position: relative;
+    font-size:14px;
+
+    z-index:-1;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+    padding:1rem;
+    
+}
