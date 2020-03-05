@@ -114,6 +114,10 @@ body {
     padding:.5rem;
 }
 
+.social:hover {
+    filter: brightness(155%) contrast(160%) saturate(9);
+}
+
 
 /* FOOTER STARTS */
 
