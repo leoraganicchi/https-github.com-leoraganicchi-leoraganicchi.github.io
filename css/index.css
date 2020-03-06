@@ -9,9 +9,10 @@
     --low-blue: #22D1EE;
     --box-grey: #F7F7F7;
     --font-color: #252525;
+    cursor: default;
 }
 
-
+/*grid wrapper*/
 .wrapper {
     overflow-x: hidden;
     position: relative;
@@ -24,11 +25,10 @@
     grid-gap:20px;
 
 }
-
+/* 1º grid line */
     .promo {
         grid-column: 1/2;
         grid-row:1/2;
-        display:inline-block;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -41,9 +41,8 @@
                 }
 
                 .promo h1 span {
-                    box-shadow: 3px 3px 0px 3px var(--low-blue);
+                    border-bottom: 3px solid var(--low-blue);
                     width: fit-content;
-                    
                 } 
                 
                 .promo p {
@@ -57,12 +56,17 @@
                     text-decoration: none;
                     color: white;
                 }
-                .promo .button-box {
+
+                .promo .button {
                     margin-top:75px;
+                    width:fit-content;
+                    height: fit-content;
+                }
+                .promo .button-box {
+                    box-shadow: var(--box-shadow);
                     background-color: var(--main-color);
                     border-radius: 5px;
                     padding:15px;
-                    width: fit-content;
                     transform: scale(1);
                     transition: all 0.2s;
                 }
@@ -90,21 +94,126 @@
         display:flex;
         justify-content: center;
     }
- 
+    /* 2º grid line */
     .abilities {
-        background-color:black;
+        margin-top:50px;
         grid-row:2/3;
         grid-column: 1/3;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:300px;
     }
+        .box {
+            clear: both;
+            background-color: var(--box-grey);
+            border-radius: 10px;
+            height:300px;
+            width: 500px;
+            margin-left:15px;
+            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .box h3 {
+                font-size: 18px;
+                color:var(--main-color);
+                margin-top:0.8rem;
+            }
+
+            .box p {
+                color:var(--font-color);
+                margin:30px 50px;
+                text-align: left;
+                font-size: 16px;
+                font-weight: 400;
+                width:70%;
+            }
+            
+            /*letting border straight*/
+            .box-1 {
+                margin-left: unset;
+            }
+
+            .box-3 {
+                margin-right:unset;
+            }
+
 
     .image2 {
-        background-color:orange;
+        margin-top:-50px;
         grid-row:3/4;
         grid-column: 1/2;
+        align-items: flex-start;
+        display:flex;
+        justify-content: center;
     }
 
+
     .idea {
-        background-color: red;
+        margin-top:-50px;
         grid-row:3/4;
         grid-column: 2/3;
+        display:flex;
+        flex-direction: column;
+
     }
+
+        .idea h1 {
+            color:var(--main-color);
+            font-size: 60px;
+            font-weight: 900px;
+        }
+
+        .idea h1 span {
+            border-bottom: 3px solid var(--low-blue);
+            width: fit-content;
+        }
+
+        .idea p {
+            line-height: 1.5rem;
+            margin-top:15px;
+            color:var(--font-color);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .idea a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .idea .button2 {
+            margin-top:5px;
+            width: 120px;
+            height: fit-content;
+        }
+
+        .idea .button-box2 {
+            box-shadow: var(--box-shadow);
+            background-color: var(--main-color);
+            border-radius: 5px;
+            padding:15px;
+            transform: scale(1);
+            transition: all 0.2s;
+        }
+
+        .idea .button-box2:hover{
+            background-color: var(--low-blue);
+            transition: all 0.2s;
+        }
+        .idea .button-box2:active{
+            transform: scale(0.99);
+            transition: all 0.2s;
+        }
+
+        .idea .lowkey2 {
+            margin-top:60px;
+            font-weight: 200;
+            font-size: 14px;
+        }
