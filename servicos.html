@@ -1,1 +1,118 @@
-<p> tem nada aqui, xô</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Pardal Adesivos</title>
+    <link rel="icon" href="/img/favicon.ico.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="/css/headerfooter.css">
+    <link rel="stylesheet" type="text/css" href="/css/servicos.css"> 
+</head>
+<body id="body">
+    <header class=header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Pardal Adesivos" width="110">
+        </div>
+        <nav class="nav-items">
+            <a class="item home" href="/index.html">Página Inicial</a>
+            <a class="item servicos" href="/servicos.html">Serviços</a>
+            <a class="item contato" href="/contato.html"><div class="contato-box">Contato</div></a>                
+        </nav>
+        <div class="nav-social">
+            <a class="facebook social" href="https://www.facebook.com/PardalAdesivos/" target="_blank"><img src="/svg/Facebook-logo.svg" alt="Facebook" width="30"></a>
+            <a class="instagram social" href="https://www.instagram.com/pardaladesivos/" target="_blank"><img src="/svg/Instagram-logo.svg" alt="Instagram" width="30"></a>
+        </div>
+</header>
+    <div class="advice"><p>Clique no item de interesse para entrar em contato.</p></div>
+    <div class="container">
+        <!--Começo de um box de serviço-->
+         <!--Cartão de Visitas-->
+        <div class="wrapper">
+            <a class="button" href="#" id="cartão-visita" value="Cartão de Visitas" onclick="openForm(this)">
+                <img class="img" src="/img/imgtest.png" alt="Cartão de visitas" width="300" height="280">
+                <div class="txt">
+                    <p class="sheads"><strong>Cartão de Visitas</strong></p>
+                    <p>a partir de <strong>R$ 49,99</strong> <span class="units">(1000un.)</span></p>
+                </div>
+            </a>
+        </div>
+        <!--Adesivo-->
+        <div class="wrapper"> 
+            <a class="button" href="#" value="Adesivo" onclick="openForm(this)">
+                <img class="img" src="/img/imgtest.png" alt="Adesivo" width="300" height="280">
+                <div class="txt">
+                    <p class="sheads"><strong>Adesivo</strong></p>
+                    <p>a partir de <strong>R$ 29,99</strong> <span class="units">por m²</span></p>
+                </div>
+            </a>
+        </div>
+        <!--Adesivo Laminado--> 
+        <div class="wrapper">
+            <a class="button" href="#" value="Adesivo Laminado" onclick="openForm(this)">
+                <img class="img" src="/img/imgtest.png" alt="Adesivo Laminado" width="300" height="280">
+                <div class="txt">
+                    <p class="sheads"><strong>Adesivo Laminado</strong></p>
+                    <p>a partir de <strong>R$ 48,99</strong> <span class="units">por m²</span></p>
+                </div>
+            </a>    
+        </div>
+        <!--Adesivo Transparente-->          
+        <div class="wrapper">
+            <a class="button" href="#" value="Adesivo Transparente" onclick="openForm(this)">
+                <img class="img" src="/img/imgtest.png" alt="Adesivo Transparente" width="300" height="280">
+                <div class="txt">
+                    <p class="sheads"><strong>Adesivo Transparente</strong></p>
+                    <p>a partir de <strong>R$ 29,99</strong> <span class="units">por m²</span></p>
+                </div>
+            </a>
+        </div>
+        <!--Impressão Digital-->          
+        <div class="wrapper">
+            <a class="button" href="#" value="Impressão Digital" onclick="openForm(this)">
+                <img class="img" src="/img/imgtest.png" alt="Impressão Digital" width="300" height="280">
+                <div class="txt">
+                    <p class="sheads"><strong>Impressão Digital</strong></p>
+                    <p>a partir de <strong>R$ 29,99</strong> <span class="units">por m²</span></p>
+                </div>
+            </a>
+        </div>
+        <!--Impressão Digital + Faca Especial--> 
+        <div class="wrapper">
+            <a class="button" href="#" value="Impressão Digital + Faca Especial" onclick="openForm(this)">
+                <img class="img" src="/img/imgtest.png" alt="Impressão Digital + Faca Especial" width="300" height="280">
+                <div class="txt">
+                    <p class="sheads"><strong>Impressão Digital + Faca Especial</strong></p>
+                    <p>a partir de <strong>R$ 38,99</strong> <span class="units">por m²</span></p>
+                </div>
+            </a>
+            
+        </div>
+        <!--Fim de um box de serviço-->
+    </div>
+
+    <div class="form" id="popupForm">
+        <form action="servicos.html" method="post">
+            <h3>Preencha para solicitar orçamento.</h3>
+            <input type=hidden name="destino" value="leonardo0guerra@gmail.com">
+            <p>
+                <input type="text" name="Nome" id="Nome" placeholder="Nome" required>
+                <input type="text" name="Empresa" id="Empresa" placeholder="Empresa" required>
+                <input type="email" name="Endereço" id="Endereço" placeholder="Endereço de Email" required>
+                <input type="text" name="Produto" id="Produto" placeholder="Produto" disabled>
+                <textarea name="Especificação" id="Expecificação" placeholder="Descreva aqui seu pedido detalhadamente." cols="30" rows="10" required></textarea>
+                <input type="submit" value="Solicitar orçamento" id="button" onclick="sendForm()">
+            </p>
+        </form>
+    </div>
+
+
+
+    
+    <footer>
+        <p class="footerrights">© 2023 por Pardal Adesivos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/javascript/servicos.js"></script>
+</body>
+</html>

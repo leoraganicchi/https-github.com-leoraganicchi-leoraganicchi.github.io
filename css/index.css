@@ -8,8 +8,9 @@
     --main-color: #3D5AF1;
     --low-blue: #22D1EE;
     --box-grey: #F7F7F7;
-    --font-color: #252525;
+    --font-color: #333333;
     cursor: default;
+    background-color:white;
 }
 
 /*grid wrapper*/
@@ -113,10 +114,10 @@
             width: 500px;
             margin-left:15px;
             margin-right: 15px;
+            padding-top:40px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
             .box h3 {
@@ -143,7 +144,7 @@
                 margin-right:unset;
             }
 
-
+     /* 3º grid line */      
     .image2 {
         margin-top:-50px;
         grid-row:3/4;

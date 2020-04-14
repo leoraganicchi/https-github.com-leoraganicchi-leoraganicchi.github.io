@@ -6,7 +6,7 @@
     --main-color: #3D5AF1;
     --low-blue: #22D1EE;
     --box-grey: #F7F7F7;
-    --font-color: #252525;
+    --font-color: #333333;
     font-size:16px;
     scroll-behavior: smooth;
     color:var(--font-color);    
@@ -84,16 +84,17 @@ body {
 .contato-box {
     display:inline-block;
     padding: .7rem 2rem;
-    border-radius: 5px;
-    border:2px solid var(--main-color);
+    border-radius: 3px;
+    border-bottom:2px solid var(--main-color);
     transform: scale(1);
     transition: all 0.2s;
+    background-color:var(--box-grey);
 
 }
 
 .contato-box:hover {
     transition: all 0.2s;
-    border: 2px solid var(--low-blue);
+    border-bottom: 2px solid var(--low-blue);
 
 }
 
