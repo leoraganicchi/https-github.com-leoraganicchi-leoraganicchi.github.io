@@ -31,7 +31,7 @@
          <!--Cartão de Visitas-->
         <div class="wrapper">
             <a class="button" href="#" id="cartão-visita" value="Cartão de Visitas" onclick="openForm(this)">
-                <img class="img" src="/img/imgtest.png" alt="Cartão de visitas" width="300" height="280">
+                <img class="img" src="/img/cartaovisitas.png" alt="Cartão de visitas" width="250" height="280">
                 <div class="txt">
                     <p class="sheads"><strong>Cartão de Visitas</strong></p>
                     <p>a partir de <strong>R$ 49,99</strong> <span class="units">(1000un.)</span></p>
@@ -41,7 +41,7 @@
         <!--Adesivo-->
         <div class="wrapper"> 
             <a class="button" href="#" value="Adesivo" onclick="openForm(this)">
-                <img class="img" src="/img/imgtest.png" alt="Adesivo" width="300" height="280">
+                <img class="img" src="/img/adesivo.png" alt="Adesivo" width="250" height="280">
                 <div class="txt">
                     <p class="sheads"><strong>Adesivo</strong></p>
                     <p>a partir de <strong>R$ 29,99</strong> <span class="units">por m²</span></p>
@@ -51,7 +51,7 @@
         <!--Adesivo Laminado--> 
         <div class="wrapper">
             <a class="button" href="#" value="Adesivo Laminado" onclick="openForm(this)">
-                <img class="img" src="/img/imgtest.png" alt="Adesivo Laminado" width="300" height="280">
+                <img class="img" src="/img/adesivolaminado.png" alt="Adesivo Laminado" width="250" height="280">
                 <div class="txt">
                     <p class="sheads"><strong>Adesivo Laminado</strong></p>
                     <p>a partir de <strong>R$ 48,99</strong> <span class="units">por m²</span></p>
@@ -61,7 +61,7 @@
         <!--Adesivo Transparente-->          
         <div class="wrapper">
             <a class="button" href="#" value="Adesivo Transparente" onclick="openForm(this)">
-                <img class="img" src="/img/imgtest.png" alt="Adesivo Transparente" width="300" height="280">
+                <img class="img" src="/img/adesivotransparente.png" alt="Adesivo Transparente" width="250" height="280">
                 <div class="txt">
                     <p class="sheads"><strong>Adesivo Transparente</strong></p>
                     <p>a partir de <strong>R$ 29,99</strong> <span class="units">por m²</span></p>
@@ -71,7 +71,7 @@
         <!--Impressão Digital-->          
         <div class="wrapper">
             <a class="button" href="#" value="Impressão Digital" onclick="openForm(this)">
-                <img class="img" src="/img/imgtest.png" alt="Impressão Digital" width="300" height="280">
+                <img class="img" src="/img/impressaodigital.png" alt="Impressão Digital" width="250" height="280">
                 <div class="txt">
                     <p class="sheads"><strong>Impressão Digital</strong></p>
                     <p>a partir de <strong>R$ 29,99</strong> <span class="units">por m²</span></p>
@@ -81,7 +81,7 @@
         <!--Impressão Digital + Faca Especial--> 
         <div class="wrapper">
             <a class="button" href="#" value="Impressão Digital + Faca Especial" onclick="openForm(this)">
-                <img class="img" src="/img/imgtest.png" alt="Impressão Digital + Faca Especial" width="300" height="280">
+                <img class="img" src="/img/impressao_facaespecial.png" alt="Impressão Digital + Faca Especial" width="250" height="280">
                 <div class="txt">
                     <p class="sheads"><strong>Impressão Digital + Faca Especial</strong></p>
                     <p>a partir de <strong>R$ 38,99</strong> <span class="units">por m²</span></p>
@@ -93,7 +93,7 @@
     </div>
 
     <div class="form" id="popupForm">
-        <form action="servicos.html" method="post">
+        <form action="servicos.php" method="post">
             <h3>Preencha para solicitar orçamento.</h3>
             <input type=hidden name="destino" value="leonardo0guerra@gmail.com">
             <p>
@@ -101,7 +101,7 @@
                 <input type="text" name="Empresa" id="Empresa" placeholder="Empresa" required>
                 <input type="email" name="Endereço" id="Endereço" placeholder="Endereço de Email" required>
                 <input type="text" name="Produto" id="Produto" placeholder="Produto" disabled>
-                <textarea name="Especificação" id="Expecificação" placeholder="Descreva aqui seu pedido detalhadamente." cols="30" rows="10" required></textarea>
+                <textarea name="Especificação" id="Especificação" placeholder="Descreva aqui seu pedido detalhadamente." cols="30" rows="10" required></textarea>
                 <input type="submit" value="Solicitar orçamento" id="button" onclick="sendForm()">
             </p>
         </form>
@@ -112,6 +112,7 @@
     
     <footer>
         <p class="footerrights">© 2023 por Pardal Adesivos. Todos os direitos reservados.</p>
+        <a href="https://leoraganicchi.github.io/" target="_blank">Criado por Leonardo G. Raganicchi</a>
     </footer>
     <script src="/javascript/servicos.js"></script>
 </body>

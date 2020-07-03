@@ -129,13 +129,23 @@ footer {
     background-color: var(--box-grey);
     position: relative;
     font-size:14px;
-
     z-index:-1;
 }
 
 footer p {
     display:flex;
     justify-content: center;
-    padding:1rem;
+    padding-top:1rem;
+    padding-bottom:0.5rem;
     
 }
+footer a {
+    color:var(--font-color);
+    text-decoration: none;
+    font-size:12px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 0.8rem;
+}
+
+
